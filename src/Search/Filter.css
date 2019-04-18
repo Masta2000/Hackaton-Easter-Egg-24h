@@ -1,91 +1,48 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
 
-.Filter .button {
-    background-color: black;
-    color :white;
-    margin  : 10px;
-}
+  .btn {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008cba;
+  }
 
-.Filter .button1 {
-    background-color: rgba(48, 49, 48, 0.219);
-    color : black;
-    border-collapse:none;
-    border-color:black;
-    font-family: Helvetica, sans-serif;
-    border-radius: 10%;
-    margin-right: 15px;
-    
-}
-
-.Filter .button1:hover {
-    background-color: rgba(110, 207, 90, 0.219);
-    color : black;
-    border-collapse:none;
-    border-color:black;
-    font-family: Helvetica, sans-serif;
-    margin-top:50px;
-    border-radius: 10%;
-    margin-right: 15px;
-    transition: 1s;
-    
-}
-.Filter .button2 {
-    background-color: rgba(48, 49, 48, 0.219);
-    color : black;
-    border-collapse:none;
-    border-color:black;
-    font-family: Helvetica, sans-serif;
-    margin-top:50px;
-    border-radius: 10%;
-    margin-right: 15px;
-    
-}
-.Filter .button2:hover {
-    background-color: rgba(110, 207, 90, 0.219);
-    color : black;
-    border-collapse:none;
-    border-color:black;
-    font-family: Helvetica, sans-serif;
-    margin-top:50px;
-    border-radius: 10%;
-    margin-right: 15px;
-    transition: 1s;
-    
-}
-.Filter .button3 {
-    background-color: rgba(48, 49, 48, 0.219);
-    color : black;
-    border-collapse:none;
-    border-color:black;
-    font-family: Helvetica, sans-serif;
-    margin-top:50px;
-    border-radius: 10%;
-    margin-right: 15px;
-    
-}
-.Filter .button3:hover {
-    background-color: rgba(235, 157, 42, 0.795);
-    color : black;
-    border-collapse:none;
-    border-color:black;
-    font-family: Helvetica, sans-serif;
-    margin-top:50px;
-    border-radius: 10%;
+.btn:hover {
+  background-color: #008cba;
+  color: white;
 }
 
-.Filter .card > img {
-    width: 250px;
+.btn:active {
+    
+    box-shadow: none;
+}
+
+.Filter .cards {
+  padding: 0;
 }
 
 .Filter .card {
-    border: none;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1%;
-    padding:0;
-    max-width: 250px;
-    margin-right: 15px;
-    transition: 1s;
-    
+  border: none;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  padding: 0;
+  max-width: 250px;
+}
+.Filter .card > img {
+  width: 250px;
 }
