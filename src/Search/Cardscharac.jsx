@@ -14,7 +14,6 @@ class Cards extends Component {
       .then(data => {
         this.setState({
           characters: data,
-          eggs: data,
         });
       });
   }

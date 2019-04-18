@@ -1,7 +1,6 @@
-
 import React, { Component } from "react";
 
-import SearchBar from './SearchBar';
+import SearchBar from "./SearchBar";
 import Cardscharac from "./Cardscharac";
 import Cardseggs from "./Cardseggs";
 import "./Search.css";
@@ -10,38 +9,40 @@ class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        value: "",
-        displayList: [],
-    }
+      displayList: []
+    };
   }
-handleClickCharacter = () => {
-  console.log(<Cardscharac/>)
+  handleClickCharacter = () => {
     this.setState({
-        displayList: <Cardscharac />
-    })
-}
+      displayList: <Cardscharac />
+    });
+  };
 
-handleClickEgg = () => {
+  handleClickEgg = () => {
     this.setState({
-        displayList: <Cardseggs/>
-    })
-}
+      displayList: <Cardseggs />
+    });
+  };
 
-handleClickAll = () => {
+  handleClickAll = () => {
     this.setState({
-        displayList: [<Cardscharac/>, <Cardseggs/>]
-    })
-}
-    
+      displayList: [<Cardscharac />, <Cardseggs />]
+    });
+  };
+
   render() {
     return (
       <div className="Search">
         <SearchBar />
-        <button className="button" onClick={this.handleClickEgg}>Egg</button>
-                <button  className="button" onClick={this.handleClickCharacter}>Characters</button>
-                <button className="button" onClick={this.handleClickAll}>All</button>
-                
-        
+        <button className="button" onClick={this.handleClickEgg}>
+          Egg
+        </button>
+        <button className="button" onClick={this.handleClickCharacter}>
+          Characters
+        </button>
+        <button className="button" onClick={this.handleClickAll}>
+          All
+        </button>
       </div>
     );
   }
