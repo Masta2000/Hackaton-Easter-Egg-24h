@@ -1,4 +1,4 @@
-.button {
+.Filter .button {
     background-color: black;
     color :white;
     margin  : 10px;
@@ -7,4 +7,19 @@
     font-family: Helvetica, sans-serif;
     margin-top:50px;
     border-radius: 10%;
+}
+
+.Filter .card > img {
+    width: 250px;
+}
+
+.Filter .card {
+    border: none;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding:0;
+    max-width: 250px;
 }
