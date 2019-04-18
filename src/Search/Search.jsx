@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import Filter from './Filter'
 import SearchBar from './SearchBar';
@@ -36,11 +35,14 @@ handleClickAll = () => {
   render() {
     return (
       <div className="Search">
+        <div>
         <SearchBar />
-      
+        </div>
+                <div>
                 <Filter/>
                 <Cardscharac />
                 <Cardseggs />
+                </div>
         
       </div>
     );

@@ -40,7 +40,7 @@ const languages = [
   {
     name: 'Audrey',
     year: 1972
-  },
+  }
 ];
 
 // Teach Autosuggest how to calculate suggestions for any given input value.

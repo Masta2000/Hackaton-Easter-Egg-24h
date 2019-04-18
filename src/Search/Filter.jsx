@@ -45,17 +45,22 @@ class Filter extends Component {
 
     render () {
         return (
-            <div className="Filter">
-                <button className="button" onClick={this.handleClickEgg}>Egg</button>
-                <button  className="button" onClick={this.handleClickCharacter}>Characters</button>
-                <button className="button" onClick={this.handleClickAll}>All</button>
-
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="Filter offset-5 col-md-4">
+                        <button className="button1" onClick={this.handleClickEgg}>Egg</button>
+                        <button  className="button2" onClick={this.handleClickCharacter}>Characters</button>
+                        <button className="button3" onClick={this.handleClickAll}>All</button>
+                    </div>
+                </div>
                 <ul>
                     {
                         this.state.displayList.map(el => <li>{el.color} <img src={el.image}/></li>)
                     }
                 </ul>
+            
             </div>
+            
         )
     }
 }
