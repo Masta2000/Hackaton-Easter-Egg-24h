@@ -11,7 +11,15 @@ class Filter extends Component {
             value: "",
             displayList: [],
             character: [
-                {"name":"Supergirl (Kara Zor-El)","species":"Kryptonian","gender":"Female","origin":"Krypton","image":"pictures/1.png","skills":["magnetic control:3","pass through walls:5","resurrection:9"],"id":"5cac51240d488f0da6151c41","meta":{"revision":0,"created":1555590498964,"version":0},"$loki":133}
+                {"image":"Images/Adjudicator_Rick.png",},
+                {"image":"Images/Albert_Einstein.png",},
+                {"image":"Images/Alien_Rick.png",},
+                {"image":"Images/Beth_Smith.png",},
+                {"image":"Images/Cult_Leader_Morty.png",},
+                {"image":"Images/Jerry_Smith.png",},
+                {"image":"Images/Morty_Smith_.png",},
+                {"image":"Images/Rick_Sanchez.png",},
+                {"image":"Images/Summer_Smith.png",},
             ],
 
             egg: [
