@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 // class SearchBar extends Component {
 //     render () {
 //         return (
@@ -14,33 +15,61 @@ import './SearchBar.css'
 // Imagine you have a list of languages that you'd like to autosuggest.
 const languages = [
   {
-    name: 'Marin la tepu',
-    year: 1972
+    name: 'Adjudicator Rick',
   },
   {
-    name: 'Elm',
-    year: 2012
+    name: 'Albert Einstein',
   },
   {
-    name: 'Guillaume',
-    year: 1972
+    name: 'Alien Rick',
   },
   {
-    name: 'Ta mère',
-    year: 1972
+    name: 'Beth Smith',
   },
   {
-    name: 'Antho',
-    year: 1972
+    name: 'Cult Leader Morty',
   },
   {
-    name: 'Chris',
-    year: 1972
+    name: 'Egg of chameleon',
   },
   {
-    name: 'Audrey',
-    year: 1972
-  }
+    name: 'Egg of fighting Fish Siamese',
+  },
+  {
+    name: 'Egg of Fighting',
+  },
+  {
+    name: 'Egg of Frog Bull',
+  },
+  {
+    name: 'Egg of Gull Heiring',
+  },
+  {
+    name: 'Egg of Hellbender copie',
+  },
+  {
+    name: 'Egg of Ostrich copie',
+  },
+  {
+    name: 'Egg of Sturgeon Atlantic',
+  },
+  {
+    name: 'Jerry Smith',
+  },
+  {
+    name: 'Morty Smith_',
+  },
+  {
+    name: 'Rick Sanchez',
+  },
+  {
+    name: 'Strange Egg copie',
+  },
+  {
+    name: 'Summer Smith',
+  },
+
+
 ];
 
 // Teach Autosuggest how to calculate suggestions for any given input value.

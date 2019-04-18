@@ -11,17 +11,21 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-top : 20px;
+    margin-bottom : 20px;
   }
 
   .btn {
     background-color: white; 
     color: black; 
-    border: 2px solid #008cba;
+    border: 2px solid black;
+    box-shadow: none !important ;
   }
 
 .btn:hover {
-  background-color: #008cba;
+  background-color: black;
   color: white;
+  transition: 1s;
 }
 
 .btn:active {
@@ -45,4 +49,9 @@
 }
 .Filter .card > img {
   width: 250px;
+}
+
+.Filter .card img:hover {
+  margin-left: 1.5px;
+  margin-left:1.5px;
 }
