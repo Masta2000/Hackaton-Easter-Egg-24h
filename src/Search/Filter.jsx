@@ -4,7 +4,7 @@ import Cardscharac from './Cardscharac';
 import './Filter.css'
 
 
- 
+ class Filter extends Component {
     handleClickCharacter = () => {
         this.setState({
             displayList: [...this.state.character]
@@ -38,6 +38,6 @@ import './Filter.css'
             </div>
         )
     }
-}
+ }
 
 export default Filter;

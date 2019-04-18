@@ -43,6 +43,8 @@ class Search extends Component {
         <button className="button" onClick={this.handleClickAll}>
           All
         </button>
+        <Cardscharac />
+        <Cardseggs />
       </div>
     );
   }
