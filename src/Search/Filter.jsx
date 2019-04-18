@@ -56,13 +56,14 @@ class Filter extends Component {
                 <button className="button" onClick={this.handleClickEgg}>Egg</button>
                 <button  className="button" onClick={this.handleClickCharacter}>Characters</button>
                 <button className="button" onClick={this.handleClickAll}>All</button>
-
-                <ul className="images row justify-content-center">
+                <ul>
                     {
                         this.state.displayList.map(el => <li className="card col-xs-12 col-sm-6 col-lg-3 row justify-content-center">{el.color} <img src={el.image}/></li>)
                     }
                 </ul>
+            
             </div>
+            
         )
     }
  }
