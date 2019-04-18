@@ -1,17 +1,50 @@
-import React, { Component } from 'react';
+
+import React, { Component } from "react";
+
 import SearchBar from './SearchBar';
-import Filter from './Filter';
+import Cardscharac from "./Cardscharac";
+import Cardseggs from "./Cardseggs";
+import "./Search.css";
 
 class Search extends Component {
-    
-    render () {
-        return (
-<div className="search">
-            <SearchBar />
-            <Filter />
-</div>
-        )
+  constructor(props) {
+    super(props);
+    this.state = {
+        value: "",
+        displayList: [],
     }
+  }
+handleClickCharacter = () => {
+  console.log(<Cardscharac/>)
+    this.setState({
+        displayList: <Cardscharac />
+    })
+}
+
+handleClickEgg = () => {
+    this.setState({
+        displayList: <Cardseggs/>
+    })
+}
+
+handleClickAll = () => {
+    this.setState({
+        displayList: [<Cardscharac/>, <Cardseggs/>]
+    })
+}
+    
+  render() {
+    return (
+      <div className="Search">
+        <SearchBar />
+        <button className="button" onClick={this.handleClickEgg}>Egg</button>
+                <button  className="button" onClick={this.handleClickCharacter}>Characters</button>
+                <button className="button" onClick={this.handleClickAll}>All</button>
+                
+        
+      </div>
+    );
+  }
 }
 
 export default Search;
