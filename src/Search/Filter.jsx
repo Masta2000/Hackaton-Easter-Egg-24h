@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./Filter.css";
 class Filter extends Component {
   constructor(props) {
@@ -54,21 +55,21 @@ class Filter extends Component {
     return (
       <div className="Filter container-fluid">
         <div className="row justify-content-center">
-            <button className="button btn" onClick={this.handleClickEgg}>
-              Egg
-            </button>
-            <button className="button btn" onClick={this.handleClickCharacter}>
-              Characters
-            </button>
-            <button className="button btn" onClick={this.handleClickAll}>
-              All
-            </button>
+          <button className="button btn" onClick={this.handleClickEgg}>
+            Egg
+          </button>
+          <button className="button btn" onClick={this.handleClickCharacter}>
+            Characters
+          </button>
+          <button className="button btn" onClick={this.handleClickAll}>
+            All
+          </button>
         </div>
         <ul className="cards row justify-content-center">
           {this.state.displayList.map(el => (
-            <li className="card col-xs-12 col-sm-6 col-lg-3 row justify-content-center">
-              {el.color} <img src={el.image} />
-            </li>
+              <li className="card col-xs-12 col-sm-6 col-lg-3 row justify-content-center">
+                <img src={el.image} />
+              </li>
           ))}
         </ul>
       </div>
