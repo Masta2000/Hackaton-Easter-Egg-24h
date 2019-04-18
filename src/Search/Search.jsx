@@ -1,6 +1,6 @@
 
 import React, { Component } from "react";
-
+import Filter from './Filter'
 import SearchBar from './SearchBar';
 import Cardscharac from "./Cardscharac";
 import Cardseggs from "./Cardseggs";
@@ -37,10 +37,10 @@ handleClickAll = () => {
     return (
       <div className="Search">
         <SearchBar />
-        <button className="button" onClick={this.handleClickEgg}>Egg</button>
-                <button  className="button" onClick={this.handleClickCharacter}>Characters</button>
-                <button className="button" onClick={this.handleClickAll}>All</button>
-                
+      
+                <Filter/>
+                <Cardscharac />
+                <Cardseggs />
         
       </div>
     );
