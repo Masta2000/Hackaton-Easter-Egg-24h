@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
 import Search from "./Search/Search";
+
 import "./App.css";
 
 class App extends Component {
@@ -9,6 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
+          <Search/>
           <Route path="/Search" component={Search} />
         </Router>
       </div>
