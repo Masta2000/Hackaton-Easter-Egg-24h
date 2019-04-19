@@ -7,6 +7,7 @@ class Search extends Component {
   render() {
     return (
       <div className="Search">
+        <h1>Complete list of Rick and Morty's collectible cards</h1>
         <SearchBar />
         <Filter />
       </div>

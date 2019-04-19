@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
 .Search {
-    margin: 5%;
+  padding: 5%;
+  background-color: #f0ffff;
+}
+
+.Search h1 {
+  font-family: "Lobster";
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 5%;
 }
