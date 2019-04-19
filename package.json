@@ -11,6 +11,8 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "react-shuffle": "^2.1.0",
+    "react-items-carousel": "^2.3.2",
+    "react-transition-group": "^1.2.1",
     "reactstrap": "^8.0.0"
   },
   "scripts": {
