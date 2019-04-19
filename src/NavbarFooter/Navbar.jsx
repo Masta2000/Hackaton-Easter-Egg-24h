@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 import MenuItem from "./MenuItem";
 import Menu from "./Menu";
 import MenuButton from "./MenuButton";
@@ -10,18 +10,22 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuOpen: false
+      menuOpen: false,
+      counter: 0
     };
   }
 
   handleMenuClick() {
-    console.log('coucou');
-    
+    console.log("coucou");
+
     this.setState({ menuOpen: !this.state.menuOpen });
   }
+  handleCounter = () => {
+    this.setState({ counter: this.state.counter + 1 });
+  };
 
-  handleLinkClick() {
-    this.setState({ menuOpen: false });
+  handleMenuClick() {
+    this.setState({ menuOpen: !this.state.menuOpen });
   }
 
   render() {
@@ -50,40 +54,54 @@ class Navbar extends Component {
         transition: "filter 0.5s ease"
       }
     };
-    const menu = [{
-      name: "Home",
-      link: '/',
-    }, {
-      name: "Search",
-      link: '/Search',
-    }];
+    const menu = [
+      {
+        name: "Home",
+        link: "/"
+      },
+      {
+        name: "Search",
+        link: "/Search"
+      }
+    ];
     const menuItems = menu.map((item, index) => {
       return (
-        <MenuItem
-          key={index}
-          delay={`${index * 0.1}s`}
-        >
-          <NavLink to={item.link} className="navlink">{item.name}</NavLink>
+        <MenuItem key={index} delay={`${index * 0.1}s`}>
+          <NavLink to={item.link} className="navlink">
+            {item.name}
+          </NavLink>
         </MenuItem>
       );
     });
-
     return (
       <div className="Navbar">
         <div style={styles.container}>
           <MenuButton
-            className="menubtn"
+            open={this.state.menuOpen}
             onClick={() => this.handleMenuClick()}
             color="white"
           />
           <img src="images/yoshi orange.png" className="Logo" alt="logo" />
-          <img src="images/yoshi green.png" className="Logo" alt="logo" />
+          <img
+            src="images/yoshi green.png"
+            onClick={this.handleCounter}
+            className="Logo"
+            alt="logo"
+          />
           <img src="images/Yoshi Red.png" className="Logo" alt="logo" />
           <h1 className="Homepage">Easter and Co.</h1>
         </div>
 
         <Menu open={this.state.menuOpen}>{menuItems}</Menu>
         <div style={styles.body} />
+
+        <div
+          className={`easter-egg ${
+            this.state.counter < 21 || this.state.counter > 24 ? "hidden" : ""
+          }`}
+        >
+          <img src="Images/Yoshi-legend.png" />
+        </div>
       </div>
     );
   }

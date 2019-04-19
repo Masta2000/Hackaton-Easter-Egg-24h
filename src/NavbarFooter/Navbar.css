@@ -1,42 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 @keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+ 0% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
 }
-
 @keyframes slideIn {
-  0% {
-    transform: translateX(-2%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+ 0% {
+   transform: translateX(-2%);
+ }
+ 100% {
+   transform: translateX(0);
+ }
 }
-
 @keyframes shrink {
-  0% {
-    width: 95%;
-  }
-  100% {
-    width: 90%;
-  }
+ 0% {
+   width: 95%;
+ }
+ 100% {
+   width: 90%;
+ }
 }
-
 .Logo {
-  width: 2%; 
-  margin-left: 20px;
+ height: 2%;
+ width: 2%;
+ margin-left: 20px;
 }
-
 .Homepage {
-  margin-top: 1%;
-  font-size: 24px;
-  padding-left: 75%;
+ font-size: 25px;
+ padding-left: 960px;
 }
 
 .Navbar .navlink {
@@ -48,6 +43,7 @@
 
 .Navbar .menu {
   padding-bottom: 1%;
+  position:relative;
 }
 @media screen and (max-width: 640px) {
   .Logo {
@@ -55,7 +51,22 @@
     margin-left: 5%;
   }
 
-  .Homepage {
-    display: none;
-  }
+.easter-egg {
+  position: absolute;
+  height: 50px;
+  top: calc(50vh - 214px);
+  left: calc(50vw - 250px);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .4);
+  z-index: 5000;
+}
+
+.easter-egg .hidden {
+  display: none;
+}
+
+.easter-egg img {
+  height: 800px;
+}
+
 }
