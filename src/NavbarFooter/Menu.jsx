@@ -17,11 +17,10 @@ class Menu extends Component {
     render(){
       const styles={
         container: {
-          position: 'absolute',
+          position: 'relative',
           top: 0,
           left: 0,
           height: this.state.open? '25%': 0,
-          width: '100vw',
           display: 'flex',
           flexDirection: 'column',
           background: '#FEFCFB',
@@ -30,12 +29,9 @@ class Menu extends Component {
           transition: 'height 0.3s ease',
           zIndex: 2,
         },
-        menuList: {
-          paddingTop: '3rem',
-        }
       }
       return(
-        <div style={styles.container}>
+        <div style={styles.container} className="menu">
           {
             this.state.open?
               <div style={styles.menuList}>

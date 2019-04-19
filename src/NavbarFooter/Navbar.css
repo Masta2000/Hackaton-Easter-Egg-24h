@@ -29,12 +29,23 @@
 }
 
 .Logo {
-  height: 2%; 
   width: 2%; 
   margin-left: 20px;
 }
 
 .Homepage {
-  font-size: 25px;
-  padding-left: 960px;
+  margin-top: 1%;
+  font-size: 24px;
+  padding-left: 75%;
+}
+
+@media screen and (max-width: 640px) {
+  .Logo {
+    width:10%;
+    margin-left: 5%;
+  }
+
+  .Homepage {
+    display: none;
+  }
 }

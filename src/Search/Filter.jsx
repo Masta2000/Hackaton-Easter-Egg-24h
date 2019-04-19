@@ -9,27 +9,27 @@ class Filter extends Component {
       value: "",
       displayList: [],
       character: [
-        { image: "Images/Adjudicator_Rick.png" },
-        { image: "Images/Albert_Einstein.png" },
-        { image: "Images/Alien_Rick.png" },
-        { image: "Images/Beth_Smith.png" },
-        { image: "Images/Cult_Leader_Morty.png" },
-        { image: "Images/Jerry_Smith.png" },
-        { image: "Images/Morty_Smith_.png" },
-        { image: "Images/Rick_Sanchez.png" },
-        { image: "Images/Summer_Smith.png" }
+        { src: "Images/Adjudicator_Rick.png" },
+        { src: "Images/Albert_Einstein.png" },
+        { src: "Images/Alien_Rick.png" },
+        { src: "Images/Beth_Smith.png" },
+        { src: "Images/Cult_Leader_Morty.png" },
+        { src: "Images/Jerry_Smith.png" },
+        { src: "Images/Morty_Smith_.png" },
+        { src: "Images/Rick_Sanchez.png" },
+        { src: "Images/Summer_Smith.png" }
       ],
 
       egg: [
-        { image: "Images/Egg_of_chameleon.png" },
-        { image: "Images/Egg_of_fighting_Fish_Siamese.png" },
-        { image: "Images/Egg_of_Fighting.png" },
-        { image: "Images/Egg_of_Frog_Bull.png" },
-        { image: "Images/Egg_of_Gull_Heiring.png" },
-        { image: "Images/Egg_of_Hellbender copie.png" },
-        { image: "Images/Egg_of_Ostrich copie.png" },
-        { image: "Images/Egg_of_Sturgeon_Atlantic.png" },
-        { image: "Images/Strange_Egg copie.png" }
+        { src: "Images/Egg_of_chameleon.png" },
+        { src: "Images/Egg_of_fighting_Fish_Siamese.png" },
+        { src: "Images/Egg_of_Fighting.png" },
+        { src: "Images/Egg_of_Frog_Bull.png" },
+        { src: "Images/Egg_of_Gull_Heiring.png" },
+        { src: "Images/Egg_of_Hellbender copie.png" },
+        { src: "Images/Egg_of_Ostrich copie.png" },
+        { src: "Images/Egg_of_Sturgeon_Atlantic.png" },
+        { src: "Images/Strange_Egg copie.png" }
       ]
     };
   }

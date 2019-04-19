@@ -12,7 +12,7 @@ class Main extends Component {
       }
       
       return (
-        <div style={styles.main}>
+        <div style={styles.main} className="nav">
           <Main />
         </div>
       )
