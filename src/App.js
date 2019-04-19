@@ -2,7 +2,25 @@ import React, { Component } from 'react';
 import Carousel from './Carousel';
 import './App.css';
 
-const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,]
+const items = [{
+  url: 'Images/character1.png'
+}, {
+  url: 'Images/character2.png'
+}, {
+  url: 'Images/character3.png'
+}, {
+  url: 'Images/character4.png'
+}, {
+  url: 'Images/character5.png'
+}, {
+  url: 'Images/character6.png'
+}, {
+  url: 'Images/character7.png'
+}, {
+  url: 'Images/character8.png'
+}, {
+  url: 'Images/character9.png'
+}]
 
 
 class App extends Component {

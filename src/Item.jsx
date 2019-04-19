@@ -11,8 +11,10 @@ class Item extends Component {
     
     render() {
         const className = 'item level' + this.props.level
+        const item = this.props.item;
+        const url = item ? `url(${item.url})`: '';
         return(
-            <div className={className}>
+            <div className={className} style={{backgroundImage: url}} >
                 {this.props.id}
             </div>
         )

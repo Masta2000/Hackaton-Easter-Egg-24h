@@ -21,7 +21,6 @@ class Carousel extends Component {
     generateItems() {
         var items = []
         var level
-        console.log(this.state.active)
         for (var i = this.state.active - 2; i < this.state.active + 3; i++) {
             var index = i
             if (i < 0) {
@@ -30,7 +29,8 @@ class Carousel extends Component {
                 index = i % this.state.items.length
             }
             level = this.state.active - i
-            items.push(<Item key={index} id={this.state.items[index]} level={level} />)
+            const item = this.state.items[index];
+            items.push(<Item key={index} level={level} item={item} />)
         }
         return items
     }
@@ -46,6 +46,8 @@ class Carousel extends Component {
     
     moveRight() {
         var newActive = this.state.active
+        console.log(newActive);
+        
         this.setState({
             active: (newActive + 1) % this.state.items.length,
             direction: 'right'
@@ -54,6 +56,7 @@ class Carousel extends Component {
     
     render() {
         return(
+            <div className="container-fluid">
             <div id="carousel" className="noselect">
                 <div className="arrow arrow-left" onClick={this.leftClick}><i className="fi-arrow-left"></i></div>
                 <CSSTransitionGroup 
@@ -62,6 +65,7 @@ class Carousel extends Component {
                 </CSSTransitionGroup>
                 <div className="arrow arrow-right" onClick={this.rightClick}><i className="fi-arrow-right"></i></div>
                 <Item />
+            </div>
             </div>
         )
     }
