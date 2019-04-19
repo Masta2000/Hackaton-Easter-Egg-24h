@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import ZoomImg from "./ZoomImage";
 import "./Filter.css";
 
 class Filter extends Component {
@@ -66,13 +66,11 @@ class Filter extends Component {
             All
           </button>
         </div>
-        <ul className="cards row justify-content-center">
+        <div className="cards row justify-content-center">
           {this.state.displayList.map(el => (
-              <li className="card col-xs-12 col-sm-6 col-lg-3 row justify-content-center">
-                <img src={el.image} />
-              </li>
+              <ZoomImg imageWidth={250} imageHeight={345.3} imageMargin={10} src={el.src}/>
           ))}
-        </ul>
+        </div>
       </div>
     );
   }
