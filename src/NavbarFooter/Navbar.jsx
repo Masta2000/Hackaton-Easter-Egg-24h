@@ -16,8 +16,6 @@ class Navbar extends Component {
   }
 
   handleMenuClick() {
-    console.log("coucou");
-
     this.setState({ menuOpen: !this.state.menuOpen });
   }
   handleCounter = () => {
@@ -26,6 +24,10 @@ class Navbar extends Component {
 
   handleMenuClick() {
     this.setState({ menuOpen: !this.state.menuOpen });
+  }
+
+  hideEasterEgg = () => {
+    this.setState({counter: 0 });
   }
 
   render() {
@@ -89,7 +91,7 @@ class Navbar extends Component {
             alt="logo"
           />
           <img src="images/Yoshi Red.png" className="Logo" alt="logo" />
-          <h1 className="Homepage">Easter and Co.</h1>
+          <h1>Easter and Co.</h1>
         </div>
 
         <Menu open={this.state.menuOpen}>{menuItems}</Menu>
@@ -100,7 +102,8 @@ class Navbar extends Component {
             this.state.counter < 21 || this.state.counter > 24 ? "hidden" : ""
           }`}
         >
-          <img src="Images/Yoshi-legend.png" />
+          <div className="fog"/>
+          <img src="Images/Yoshi-legend.png"  onClick={this.hideEasterEgg}/>
         </div>
       </div>
     );

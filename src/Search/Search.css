@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 
 .Search {
+  min-height: calc(100vh - 58px - 189px);
   padding: 5%;
   background-color: #f0ffff;
 }
