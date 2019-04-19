@@ -13,8 +13,9 @@ class Navbar extends Component {
        counter : 0,
      }
    }
+
    handleCounter = () => {
-     this.setState({counter : this.state.counter + 1})
+     this.setState({counter : this.state.counter + 1});
    }
 
    handleMenuClick() {
@@ -24,6 +25,7 @@ class Navbar extends Component {
    handleLinkClick() {
      this.setState({menuOpen: false});
    }
+
 
    render(){
      const styles=
@@ -76,6 +78,10 @@ class Navbar extends Component {
          </Menu>
          <div style={styles.body}>
          </div>
+
+        <div className={`easter-egg ${(this.state.counter < 21 || this.state.counter > 24) ? 'hidden': ''}`}>
+          <img src="Images/Yoshi-legend.png" />
+        </div>
        </div>
      )
    }

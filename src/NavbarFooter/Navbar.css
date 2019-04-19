@@ -34,3 +34,21 @@
  padding-left: 960px;
 }
 
+.easter-egg {
+  position: absolute;
+  height: 500px;
+  top: calc(50vh - 214px);
+  left: calc(50vw - 250px);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .4);
+  z-index: 5000;
+}
+
+.easter-egg.hidden {
+  display: none;
+}
+
+.easter-egg img {
+  height: 500px;
+}
+
