@@ -1,4 +1,4 @@
-.button {
+.Filter .button {
   background-color: #4caf50; /* Green */
   border: none;
   color: white;
@@ -15,14 +15,14 @@
   margin-bottom: 20px;
 }
 
-.btn {
+.Filter .btn {
   background-color: white;
   color: black;
   border: 2px solid black;
   box-shadow: none !important ;
 }
 
-.btn:hover {
+.Filter .btn:hover {
   background-color: black;
   color: white;
   transition: 1s;

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from 'react-router-dom';
 import MenuItem from "./MenuItem";
 import Menu from "./Menu";
 import MenuButton from "./MenuButton";
@@ -14,6 +15,8 @@ class Navbar extends Component {
   }
 
   handleMenuClick() {
+    console.log('coucou');
+    
     this.setState({ menuOpen: !this.state.menuOpen });
   }
 
@@ -47,17 +50,20 @@ class Navbar extends Component {
         transition: "filter 0.5s ease"
       }
     };
-    const menu = ["Home", "Our Collection"];
-    const menuItems = menu.map((val, index) => {
+    const menu = [{
+      name: "Home",
+      link: '/',
+    }, {
+      name: "Search",
+      link: '/Search',
+    }];
+    const menuItems = menu.map((item, index) => {
       return (
         <MenuItem
           key={index}
           delay={`${index * 0.1}s`}
-          onClick={() => {
-            this.handleLinkClick();
-          }}
         >
-          {val}
+          <NavLink to={item.link} className="navlink">{item.name}</NavLink>
         </MenuItem>
       );
     });

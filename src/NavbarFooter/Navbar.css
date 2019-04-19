@@ -39,6 +39,16 @@
   padding-left: 75%;
 }
 
+.Navbar .navlink {
+  text-decoration: none;
+  color: black;
+  font-family: "Lobster";
+  font-size: 18px;
+}
+
+.Navbar .menu {
+  padding-bottom: 1%;
+}
 @media screen and (max-width: 640px) {
   .Logo {
     width:10%;
