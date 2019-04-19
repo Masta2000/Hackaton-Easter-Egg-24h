@@ -10,7 +10,11 @@ class Navbar extends Component {
      super(props);
      this.state={
        menuOpen:false,
+       counter : 0,
      }
+   }
+   handleCounter = () => {
+     this.setState({counter : this.state.counter + 1})
    }
 
    handleMenuClick() {
@@ -62,7 +66,7 @@ class Navbar extends Component {
          <div style={styles.container}>
            <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()} color='white'/>
            <img src='images/yoshi orange.png' className="Logo" alt ="logo"/>
-           <img src='images/yoshi green.png' className="Logo" alt ="logo"/>
+           <img src='images/yoshi green.png' onClick={this.handleCounter} className="Logo" alt ="logo"/>
            <img src='images/Yoshi Red.png' className="Logo" alt ="logo"/>
            <h1 className="Homepage">Easter and Co.</h1>
          </div>
