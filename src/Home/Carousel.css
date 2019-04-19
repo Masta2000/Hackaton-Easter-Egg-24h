@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-body {
+.Carousel {
   background-color: white;
   font-family: 'Lobster';
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 #carousel {
-  position: absolute;
+  position: relative;
   height: 200px;
   width: 810px;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 .arrow {
   position: absolute;

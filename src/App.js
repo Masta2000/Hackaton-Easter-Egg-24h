@@ -5,7 +5,6 @@ import Navbar from './NavbarFooter/Navbar'
 import Footer from './NavbarFooter/Footer'
 import Search from "./Search/Search";
 import Home from "./Home/Home";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
 

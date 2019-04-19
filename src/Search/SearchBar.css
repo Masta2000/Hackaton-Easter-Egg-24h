@@ -66,7 +66,8 @@ body {
   }
   
   .react-autosuggest__suggestion--highlighted {
-    background-color: rgba(110, 207, 90, 0.219);
+    background-color: orange;
+    opacity: 0.5;
     text-align:center;
   }
   

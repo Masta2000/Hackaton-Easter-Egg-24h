@@ -1,0 +1,13 @@
+
+.Partner {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.Partner .logoPartner {
+    max-width: 150px;
+    max-height: 100px;
+}

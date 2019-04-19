@@ -56,8 +56,7 @@ class Carousel extends Component {
     
     render() {
         return(
-            <div className="container-fluid">
-            <div id="carousel" className="noselect">
+            <div id="carousel" className="Carousel container-fluid">
                 <div className="arrow arrow-left" onClick={this.leftClick}><i className="fi-arrow-left"></i></div>
                 <CSSTransitionGroup 
                     transitionName={this.state.direction}>
@@ -65,7 +64,6 @@ class Carousel extends Component {
                 </CSSTransitionGroup>
                 <div className="arrow arrow-right" onClick={this.rightClick}><i className="fi-arrow-right"></i></div>
                 <Item />
-            </div>
             </div>
         )
     }

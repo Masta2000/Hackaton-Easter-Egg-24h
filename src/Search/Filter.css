@@ -18,12 +18,13 @@
 .Filter .btn {
   background-color: white;
   color: black;
-  border: 2px solid black;
+  border: 2px solid orange;
   box-shadow: none !important ;
 }
 
 .Filter .btn:hover {
-  background-color: black;
+  background-color: orange;
+  opacity: 0.6;
   color: white;
   transition: 1s;
 }

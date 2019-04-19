@@ -77,7 +77,7 @@ class Navbar extends Component {
     });
     return (
       <div className="Navbar">
-        <div style={styles.container}>
+        <div style={styles.container} className="Color">
           <MenuButton
             open={this.state.menuOpen}
             onClick={() => this.handleMenuClick()}

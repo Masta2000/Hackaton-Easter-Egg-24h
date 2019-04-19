@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 
-.Search {
+.Home {
   min-height: calc(100vh - 58px - 189px);
   padding: 5%;
-  background-color: white;
-}
-
-.Search h1 {
   font-family: "Lobster";
-  text-align: center;
-  text-decoration: underline;
-  margin-bottom: 10%;
-  margin-top: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -4,7 +4,7 @@ class MenuButton extends Component {
      super(props);
      this.state={
        open: this.props.open? this.props.open:false,
-       color: this.props.color? this.props.color:'black',
+       color: this.props.color? this.props.color:'white',
      }
    }
    componentWillReceiveProps(nextProps){
@@ -31,6 +31,7 @@ class MenuButton extends Component {
          height: '2px',
          width: '20px',
          background: '#000000',
+         color: '#000000',
          transition: 'all 0.2s ease',
        },
        lineTop: {

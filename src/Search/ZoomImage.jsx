@@ -61,6 +61,7 @@ class ZoomImg extends React.Component {
 
     return (
       <div
+        className="ZoomImage"
         style={{ width: imageWidth, height: imageHeight, margin: imageMargin }}
         onClick={this.toggleZoom}
       >

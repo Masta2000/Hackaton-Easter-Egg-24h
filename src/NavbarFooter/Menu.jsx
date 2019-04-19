@@ -26,7 +26,7 @@ class Menu extends Component {
          flexDirection: 'column',
          background: '#FEFCFB',
          opacity: 0.95,
-         color: '#000000',
+         color: '#ffffff',
          transition: 'height 0.3s ease',
          zIndex: 2,
        },

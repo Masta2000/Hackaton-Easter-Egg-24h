@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+.Text {
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.Text > h1{
+    color: black;
+    text-align: center;
+}
+.Text .color-orange{
+    color: orange;
+}
+.Text .color-green{
+    color: green;
+}
+.Text .color-red{
+    color: red;
+}

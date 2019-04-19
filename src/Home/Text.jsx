@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-
+import './Text.css';
 class Text extends Component {
     render() {
         return (
-            <div className='text'>
-                <h1>Tout vos héros Rick et Morty sont désormais réunis au travers de cartes a jouer, collectionez-les et affrontez-vous lors de duels andiablés</h1> 
-                <h2>Pickles Riiiiiiick</h2>
+            <div className='Text'>
+                <h1>All your heroes <span className="color-orange">Rick and Morty</span> are now united through<span className="color-green"> playing cards games </span>, collect them all and fight each other in <span className="color-red">crazy duels !</span></h1> 
             </div>
         )
     }
