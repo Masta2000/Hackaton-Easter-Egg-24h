@@ -8,15 +8,15 @@ function Footer(props) {
             <div className="container">
                 <div className="row">
                     <div className="link col-4">
-                        <h5>Nos liens</h5>
+                        <h5>Our Links</h5>
                         <ul className="list-unstyled">
                             <li><a href="#"Acceuil></a></li>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Notre collection</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Our Collection</a></li>
                         </ul>
                     </div>
                     <div className="adress col-4">
-                        <h5>Nos Coordonnées</h5>
+                        <h5>Our Contact informations</h5>
                         9 Allée Serr<br />
                         33100 Bordeaux<br />
                         <i className="fa fa-phone fa-lg"></i>05 54 36 67 51<br />

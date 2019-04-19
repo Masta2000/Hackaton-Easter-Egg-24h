@@ -50,7 +50,7 @@ class Navbar extends Component {
             transition: 'filter 0.5s ease',
           },
         }
-      const menu = ['Accueil','Notre collection']
+      const menu = ['Home','Our Collection']
       const menuItems = menu.map((val,index)=>{
         return (
           <MenuItem 
@@ -63,9 +63,9 @@ class Navbar extends Component {
         <div>
           <div style={styles.container}>
             <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()} color='white'/>
-            <img src='image/yoshi orange.png' className="Logo" alt ="logo"/>
-            <img src='image/yoshi green.png' className="Logo" alt ="logo"/>
-            <img src='image/Yoshi Red.png' className="Logo" alt ="logo"/>
+            <img src='images/yoshi orange.png' className="Logo" alt ="logo"/>
+            <img src='images/yoshi green.png' className="Logo" alt ="logo"/>
+            <img src='images/Yoshi Red.png' className="Logo" alt ="logo"/>
             <h1 className="Homepage">Easter and Co.</h1>
           </div>
 
