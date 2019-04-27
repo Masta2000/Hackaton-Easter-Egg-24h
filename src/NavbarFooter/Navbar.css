@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@keyframes appear {
+ 0% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+@keyframes slideIn {
+ 0% {
+   transform: translateX(-2%);
+ }
+ 100% {
+   transform: translateX(0);
+ }
+}
+@keyframes shrink {
+ 0% {
+   width: 95%;
+ }
+ 100% {
+   width: 90%;
+ }
+}
+.Logo {
+  width: 23px;
+  height: 27px;
+  margin: 0 20px 0 5px;
+}
+
+h1 {
+ font-size: 25px;
+ flex-grow: 1;
+ text-align: right;
+}
+
+.Navbar .navlink {
+  text-decoration: none;
+  color: black;
+  font-family: "Lobster";
+  font-size: 18px;
+}
+
+.Navbar .menu {
+  padding-bottom: 1%;
+  position:relative;
+}
+
+.Navbar .easter-egg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, .4);
+  z-index: 5000;
+  box-sizing: content-box;
+}
+
+.Navbar .easter-egg .fog {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.Navbar .easter-egg.hidden {
+  display: none;
+}
+
+.Navbar .easter-egg img {
+  position: absolute;
+  height: 500px;
+  top: calc(50vh - 240px);
+  left: calc(50vw - 175px);
+}
+
+
+@media screen and (max-width: 640px) {
+  .Logo {
+    width:10%;
+    margin-left: 5%;
+  }
+}

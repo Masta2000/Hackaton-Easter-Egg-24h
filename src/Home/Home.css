@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+.Home {
+  min-height: calc(100vh - 58px - 189px);
+  padding: 5%;
+  font-family: "Lobster";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
